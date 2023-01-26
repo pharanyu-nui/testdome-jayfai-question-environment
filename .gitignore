@@ -1,5 +1,6 @@
 bin/*.js
 bin/*.ts
+.DS_Store
 
 ### Node ###
 # Logs

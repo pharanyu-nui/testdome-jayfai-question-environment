@@ -1,3 +1,6 @@
+## How to code
+You can write your code in `test.ts`
+
 ## Run with NVM
 ```
 // setup
