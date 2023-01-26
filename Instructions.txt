@@ -1,0 +1,17 @@
+This folder contains an environment that can be used for creating custom live coding questions on TypeScript for https://www.testdome.com
+Before starting, make sure you have Node 14 installed.
+
+Steps for creating a custom live coding question on TypeScript:
+1. problem.ts should contain the template. (The candidate sees this in the coding box. It provides the starting code.)
+2. tests.ts should contain test cases. (For each test case you want to test, provide one test method. Limits per test case: max memory is 256MB and max time is 3sec on 2GHz CPU.)
+3. Open the command prompt, move to the folder that contains these files, and run the following command:
+npm test
+4. The template should fail for all test cases.
+5. Replace the template with a solution, which should pass for all test cases.
+6. You can add your custom question through the web interface: https://app.testdome.com/questions/edit/new?type=code&tab=summary
+
+TestDome runtime environment:
+1. Ubuntu Server 20.04-LTS
+3. TypeScript 4.7.3
+2. Node 14.20.0
+3. QUnit 2.19.1
