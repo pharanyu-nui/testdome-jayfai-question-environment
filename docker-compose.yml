@@ -3,6 +3,5 @@ version: '3.8'
 services:
   app:
     build: .
-    command: npm run test
     volumes:
-      - .:/usr/app
+      - ./:/usr/src/app
