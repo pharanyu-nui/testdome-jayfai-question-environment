@@ -3,15 +3,25 @@ You can write your code in `test.ts`
 
 ## Run with NVM
 ```
-// setup
+# setup first time
 nvm use
 npm install
 
-// run 
+# run 
 npm run test
 ```
 
 ## Run with Docker
 ```
-docker-compose run --rm app
+# shell to container
+docker-compose run --rm app bash
+
+# npm install (only first time)
+npm install
+
+# run
+npm run test
+
+# when you want to exit container
+exit
 ```
